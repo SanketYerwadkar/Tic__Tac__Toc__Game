@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: url("image.png"); 
+  background-image: url("background-img.jpg"); 
   background-position: center; 
   background-repeat: no-repeat;
   background-size: cover; 
@@ -12,8 +12,9 @@ body {
 }
 div1
 {
-  font-size: 100px;
-  color: white;
+  font-size: 110px;
+  color: black;
+  text-shadow: 0 0 5px white,0 0 25px white, 0 0 50px white,0 0 100px white,0 0 200px white;
 }
 
 .container {
@@ -38,13 +39,15 @@ div1
   height: 18vmin;
   width: 18vmin;
   border-radius: 10px;
-  border: none;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  border-color: #191913;
+  border: 5px;
   font-size: 100px;
-  color: red;
-  background-color: #FFE5E5;
+  color: black;
+  background-color: #A9A9A9;
 }
-
+.box:hover{
+  box-shadow:  0 0 5px gray,0 0 10px gray,0 0 15px gray,0 0 20px gray,0 0 25px gray,0 0 30px gray;
+}
 #reset-btn {
   padding: 1rem;
   font-size: 1.25rem;
@@ -52,8 +55,11 @@ div1
   color: #fff;
   border-radius: 1rem;
   border:  2px solid white;
+  margin-top: -20px;
 }
-
+#reset-btn:hover {
+  box-shadow: 0 0 25px gray, 0 0 50px gray,0 0 100px gray,0 0 200px gray;
+}
 #new-btn {
   padding: 1rem;
   font-size: 1.25rem;
@@ -61,11 +67,19 @@ div1
   color: #fff;
   border-radius: 1rem;
   border: 2px solid white;
+  margin-top: -50px;
+  box-shadow:  0 0 25px gray, 0 0 50px gray;
+}
+#new-btn:hover{
+  box-shadow:  0 0 25px gray;
 }
 
 #msg {
   color: black;
   font-size: 80px;
+  margin-top: -300px;
+  text-shadow: 0 0 5px #EEEDED,0 0 10px#EEEDED,0 0 15px #EEEDED,0 0 20px #EEEDED,0 0 25px #EEEDED,0 0 30px #EEEDED;
+
 }
 
 .msg-container {
